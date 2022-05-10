@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+*{margin:0;padding:0;box-sizing: border-box;}
+body{
+    background: #7EB2DD;
+}
+h3{
+    font-family: 'Inconsolata';
+    font-style: Normal;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    color: #001427;
+}
+
+form{
+    max-width: 427px;
+    width: 60%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #FFFFFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata';
+    font-style: Normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+input{
+    margin: 10px;
+    height: 52px;
+    max-width: 314px;
+    width: 80%;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 7px;
+}
+label{
+    /*text-align: left;*/
+    display: flex;
+}
+form input[type=submit] {
+    cursor: pointer;
+    width: 116px;
+    height: 32px;
+    background: #58A4B0;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    transition: 1s;
+}
+form input[type=submit]:hover{
+    background-color: aqua;
+}
+form input[type=text]:focus{
+    outline: 0;
+}
+form input[type=password]:focus{
+    outline: 0;
+}
