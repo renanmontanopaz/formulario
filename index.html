@@ -4,50 +4,24 @@
     <meta charset="UTF-8">
     <title>Formulário</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <form>
+    <form action="">
         <h3>Cadastrar</h3>
         <label>Username</label>
         <input id="username" type="text" name="username" required/>
+        <span class="error"></span>
         <label>Email</label>
         <input id="email" type="text" name="email" required/>
+        <span class="error"></span>
         <label>Senha</label>
         <input id="pass" type="password" name="password" required/>
+        <span class="error"></span>
         <label>Confirme sua senha</label>
         <input id="confirpass" type="password" name="confirmpassword" required/>
+        <span class="error"></span>
         <input type="submit" name="acao" value="Cadastrar" />
     </form>
-    <script>
-        var email= document.getElementById('email');
-        var username= document.getElementById('username');
-        var pass= document.getElementById('pass');
-        var confirpass= document.getElementById('confirpass');
-
-        email.addEventListener('focus',()=>{
-            email.style.borderColor="#58A4B0"
-        });
-        email.addEventListener('blur',()=>{
-           email.style.borderColor="#ccc"
-        });
-        username.addEventListener('focus',()=>{
-            username.style.borderColor="#58A4B0"
-        });
-        username.addEventListener('blur',()=>{
-            username.style.borderColor="#ccc"
-        });
-        pass.addEventListener('focus',()=>{
-            pass.style.borderColor="#58A4B0"
-        });
-        pass.addEventListener('blur',()=>{
-            pass.style.borderColor="#ccc"
-        });
-        pass.addEventListener('focus',()=>{
-            confirpass.style.borderColor="#58A4B0"
-        });
-        confirpass.addEventListener('blur',()=>{
-            confirpass.style.borderColor="#ccc"
-        });
-    </script>
 </body>
 </html>

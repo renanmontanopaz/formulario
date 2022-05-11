@@ -41,6 +41,7 @@ input{
     background: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 7px;
+    position: relative;
 }
 label{
     /*text-align: left;*/
