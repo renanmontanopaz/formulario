@@ -7,21 +7,23 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <form action="">
-        <h3>Cadastrar</h3>
-        <label>Username</label>
-        <input id="username" type="text" name="username" required/>
-        <span class="error"></span>
-        <label>Email</label>
-        <input id="email" type="text" name="email" required/>
-        <span class="error"></span>
-        <label>Senha</label>
-        <input id="pass" type="password" name="password" required/>
-        <span class="error"></span>
-        <label>Confirme sua senha</label>
-        <input id="confirpass" type="password" name="confirmpassword" required/>
-        <span class="error"></span>
-        <input type="submit" name="acao" value="Cadastrar" />
-    </form>
+        <form action="">
+            <h3>Cadastrar</h3>
+            <label>Username</label>
+            <input id="username" type="text" name="username" required/>
+            <span class="area"></span>
+            <label>Email</label>
+            <input id="email" type="text" name="email" required />
+            <span class="error"></span>
+            <label>Senha</label>
+            <input id="password" type="password" name="password" required/>
+            <span class="error"></span>
+            <label>Confirme sua senha</label>
+            <input id="confirm_password" type="password" name="confirmpassword" required/>
+            <span class="error"></span>
+            <input id="submit" type="submit" name="acao" value="Cadastrar" required/>
+            <p id="area" class="area"></p>
+        </form>
+
 </body>
 </html>

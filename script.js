@@ -1,4 +1,4 @@
-var email= document.getElementById('email');
+/*var email= document.getElementById('email');
 var username= document.getElementById('username');
 var pass= document.getElementById('pass');
 var confirpass= document.getElementById('confirpass');
@@ -26,10 +26,10 @@ pass.addEventListener('focus',()=>{
 });
 confirpass.addEventListener('blur',()=>{
     confirpass.style.borderColor="#ccc"
-});
+});*/
 const fields = document.querySelectorAll("[required]")
 
-/*function ValidateField(field){
+function ValidateField(field){
     function verifyErrors(){
         let foundError = false;
         for(let error in field.validity) {
@@ -51,9 +51,10 @@ const fields = document.querySelectorAll("[required]")
         }
     }
     return verifyErrors()
-}*/
+}
 function customValidation(event){
     const field = event.target
+    console.log(field.validity)
     let foundError = false/*ValidateField(field)*/
     function verifyErrors(){
         /*let foundError = false;*/
@@ -76,17 +77,22 @@ function customValidation(event){
         field.style.borderColor="green"
         field.setCustomValidity("")
     }
+
 }
 for (let field of fields){
     field.addEventListener("invalid", customValidation)
-    customValidation(field)
+    /*customValidation(field)*/
 }
 
 
 document.querySelector("form")
 .addEventListener("submit",event =>{
+    var a = window.document.getElementById('area')
+    a.innerText = 'Dados enviado!'
     console.log("enviar o formulário")
-
-    // não vai enviar o formulário
+    form.reset();
+    a.innerText = 'Dados enviado!'
     event.preventDefault()
 })
+
+
